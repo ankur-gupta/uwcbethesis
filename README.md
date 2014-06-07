@@ -48,19 +48,15 @@ How to compile?
 This thesis template uses citations and indexing. On a unix or MacOS platform, run these commands 
 in a terminal:
 
-`pdflatex thesis.tex
-
+```shell
 pdflatex thesis.tex
-
+pdflatex thesis.tex
 makeindex thesis.idx
-
 bibtex thesis.aux
-
 pdflatex thesis.tex
-
 bibtex thesis.aux
-
-pdflatex thesis.tex`
+pdflatex thesis.tex
+```
 
 You may need to run these commands repeatedly if you still see cross-referencing errors (such 
 as ? instead of citations, ?? instead of chapter numbers). 
