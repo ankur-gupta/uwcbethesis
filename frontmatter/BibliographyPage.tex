@@ -1,0 +1,22 @@
+%%
+%% UW CBE Thesis: frontmatter/BibliographyPage.tex
+%% Written by Ankur Gupta, Sep 1, 2013
+%% Departament of Chemical and Biological Engineering
+%% University of Wisconsin-Madison
+%% Copyright (c) Ankur Gupta, 2014
+%%
+%% License: GPL v3. See LICENSE.
+%%
+
+% Add Bibliography to TOC
+\phantomsection
+% \refstepcounter{dummy}
+\addtocontents{toc}{\protect\vspace{\beforebibskip}} % Set Bibliography a little apart
+\addcontentsline{toc}{chapter}{\tocEntry{\bibname}}
+
+\bibliographystyle{plainnat}
+\bibliography{citations}
+
+
+% This page should end now
+\cleardoublepage

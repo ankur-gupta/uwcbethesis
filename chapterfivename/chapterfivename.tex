@@ -1,0 +1,51 @@
+%%
+%% UW CBE Thesis: chapterfivename/chapterfivename.tex
+%% Written by Ankur Gupta, Sep 1, 2013
+%% Departament of Chemical and Biological Engineering
+%% University of Wisconsin-Madison
+%% Copyright (c) Ankur Gupta, 2014
+%%
+%% License: GPL v3. See LICENSE.
+%%
+
+% This is Chapter 5. You're now over the hump.
+% Drive it home.
+\chapter{Chapter Five Title}
+\label{chap:chapterfivename}
+\doublespacing
+
+\section{Defining shortcuts}
+\label{sec:chapterfivename:defining_shortcuts}
+
+You will notice that I have a \texttt{shortcuts.tex} file in this thesis template folder. 
+This file is then \texttt{input}ted in the file \texttt{uwcbethesis-config.tex}. 
+The \texttt{shortcuts.tex} file contains many shortcuts that are going to be used 
+repeatedly throughout in the thesis. For example, \verb+\chaptertwoname{}+ is a 
+shortcut defined in \texttt{shortcuts.tex} file. \\
+
+I have also defined many math symbols that I have to use repeatedly. The following 
+equations use these commands. \\
+
+The following equation describes a $n$-dimensional random vector, $\bfX$
+\begin{align}
+\bfX \sim \fN \left( \mu, \Sigma \right)
+\end{align}
+distributed normally with mean vector $\mu$ and covariance matrix $\Sigma$. The 
+probability density of $\bfX$ is given by 
+\begin{align}
+f_{\bfX}(\bfx) = \frac{1}{(2\pi)^{\frac{n}{2}} \abs{\Sigma}^{\frac{1}{2}}}\text{ } e^{-\frac{1}{2} (\bfx-\mu)^{T} \Sigma^{-1} (\bfx-\mu)}
+\end{align}
+
+
+
+\section{Using \texttt{uwcbethesis-config.tex}}
+\label{sec:chapterfivename:using_config_file}
+
+Instead of typing out your name, department, title of your thesis, etc. 
+this thesis template defines this data all at once in the file named
+\texttt{uwcbethesis-config.tex}. Please make use of these commands instead 
+of repeatedly typing out the data. Not only does this help reduce the number 
+of typographical errors, it enforces homogeneity. This thesis template uses 
+the commands defined in this config file. 
+
+

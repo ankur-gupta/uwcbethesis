@@ -1,0 +1,40 @@
+%%
+%% UW CBE Thesis: frontmatter/CopyrightPage.tex
+%% Written by Ankur Gupta, Sep 1, 2013
+%% Departament of Chemical and Biological Engineering
+%% University of Wisconsin-Madison
+%% Copyright (c) Ankur Gupta, 2014
+%%
+%% License: GPL v3. See LICENSE.
+%%
+
+%% UW requirement: Copyright page is not necessary
+%%                 but if inserted, it should be 
+%% 		           directly after the title page.
+%%
+%% This file does not need user editing unless you want to change 
+%% spacing, positioning etc. To change then names and other data
+%% edit uwcbethesis-config.tex.
+
+% Add a PDF bookmark. Need to do this because this page is not in TOC
+\pdfbookmark[1]{Copyright}{copyright}
+
+% UW requirement: No page number (not even roman)
+\thispagestyle{empty}
+
+
+% UW requirement: Center the text within the bottom third
+%                 page within the margins
+
+\hfill
+
+\vfill
+
+\begin{center}
+\textcopyright\xspace Copyright by \myName \myYear\\
+All Rights Reserved
+\end{center}
+
+
+% This page should end now
+\cleardoublepage
