@@ -1,0 +1,135 @@
+%%
+%% UW CBE Thesis: uwcbethesis-config.tex
+%% Written by Ankur Gupta, Sep 1, 2013
+%% Departament of Chemical and Biological Engineering
+%% University of Wisconsin-Madison
+%% Copyright (c) Ankur Gupta, 2014
+%%
+%% License: GPL v3. See LICENSE.
+%%
+
+%% This file is where you store all commands.
+%% Loads package which are absolutely required.
+%% Does not load non-essential packages which you can load from thesis.tex
+%%
+
+
+%-----------------------------------------------------------------------------
+%% User data:
+% Name
+\newcommand{\myName}{First Last\xspace}
+% \newcommand{\myShortName}{F. Last\xspace}
+% \newcommand{\myInitials}{F.L.\xspace}
+
+% Title
+\newcommand{\myTitle}{Full thesis title\xspace}
+% \newcommand{\myShortTitle}{Short title\xspace}
+
+% Degree and Subject
+\newcommand{\myDegree}{Doctor of Philosophy\xspace}
+% \newcommand{\myShortDegree}{Ph.D.\xspace}
+\newcommand{\mySubject}{Chemical Engineering\xspace}
+
+% Defense time
+\newcommand{\myYear}{YYYY\xspace} % YYYY = year
+\newcommand{\myMonth}{Month\xspace}
+\newcommand{\myDate}{DD\xspace} % DD = day of the month
+% \newcommand{\myDefenseDate}{10/15/2013\xspace}
+
+% University
+\newcommand{\myDepartment}{Full Department Name\xspace}
+\newcommand{\myUniversity}{Full University Name\xspace}
+\newcommand{\myLocation}{City, ST\xspace} % ST = State abbreviation
+
+% Advisors and committee members
+% Advisor
+\newcommand{\myAdvisor}{Advisor Name\xspace}
+\newcommand{\myAdvisorPos}{Professor\xspace}
+\newcommand{\myAdvisorDep}{Short Department Name\xspace}
+% Co-Advisor
+\newcommand{\myCoAdvisor}{CoAdvisor Name\xspace}
+\newcommand{\myCoAdvisorPos}{Professor\xspace}
+\newcommand{\myCoAdvisorDep}{Short Department Name\xspace}
+% Committee Member 1
+\newcommand{\myCMemberOne}{Committee MemberOne\xspace}
+\newcommand{\myCMemberOnePos}{Associate Professor\xspace}
+\newcommand{\myCMemberOneDep}{Short Department Name\xspace}
+% Committee Member 2
+\newcommand{\myCMemberTwo}{Committee MemberTwo\xspace}
+\newcommand{\myCMemberTwoPos}{Associate Professor\xspace}
+\newcommand{\myCMemberTwoDep}{Short Department Name\xspace}
+% Committee Member 3
+\newcommand{\myCMemberThree}{Committee MemberThree\xspace}
+\newcommand{\myCMemberThreePos}{Associate Professor\xspace}
+\newcommand{\myCMemberThreeDep}{Short Department Name\xspace}
+% Committee Member 4
+\newcommand{\myCMemberFour}{Committee MemberFour\xspace}
+\newcommand{\myCMemberFourPos}{Assistant Professor\xspace}
+\newcommand{\myCMemberFourDep}{Short Department Name\xspace}
+%-----------------------------------------------------------------------------
+
+
+%-----------------------------------------------------------------------------
+%% Packages which are used by this file
+% Xspace: provides \xspace used above
+\usepackage{xspace}
+%-----------------------------------------------------------------------------
+
+
+%-----------------------------------------------------------------------------
+%% Frequently used commands
+% Colors
+% \newcommand{\maroon}[1]{\textcolor{Maroon}{#1}}
+
+% Shortcuts
+\input{shortcuts}
+
+%-----------------------------------------------------------------------------
+
+
+
+%-----------------------------------------------------------------------------
+%% hyperref: So I can jump around in the PDF
+\usepackage[pdftex,hyperfootnotes=false,pdfpagelabels]{hyperref}
+\hypersetup{
+    colorlinks=true, linktocpage=true, pdfstartpage=1, pdfstartview={FitH},
+    breaklinks=true, pdfpagemode=UseNone, pageanchor=true, pdfpagemode=UseOutlines,
+    plainpages=false, bookmarksnumbered, bookmarksopen=true, bookmarksopenlevel=1,
+    hypertexnames=true, pdfhighlight=/O,%nesting=true,%frenchlinks,
+    urlcolor=webbrown, linkcolor=RoyalBlue, citecolor=webgreen, %pagecolor=RoyalBlue,
+    pdftitle={\myTitle},
+    pdfauthor={\textcopyright\ \myName},
+    pdfsubject={Chemical Engineering, Applied Mathematics, Systems Biology, Statistics},
+    pdfkeywords={stochastic kinetic model, markov chains, importance sampling, ordinary differential equation},
+    pdfcreator={pdfLaTeX},
+    pdfproducer={LaTeX with hyperref and uwcbethesis}
+}
+\usepackage[all]{hypcap} % Makes sure that link to figure/table shows the figure/table instead of the caption
+%-----------------------------------------------------------------------------
+
+
+%-----------------------------------------------------------------------------
+%% Index package: I want it
+\usepackage{makeidx}
+\makeindex
+%-----------------------------------------------------------------------------
+
+
+%-----------------------------------------------------------------------------
+%% 'code' is shorter than verbatim
+\usepackage{fancyvrb}
+\DefineShortVerb{\|}
+\VerbatimFootnotes
+\DefineVerbatimEnvironment{code}{Verbatim}
+{
+    frame=single,
+    framesep=0.25em,
+    xleftmargin=1em,
+    xrightmargin=1em,
+    samepage=true,
+    fontsize=\footnotesize
+}
+%-----------------------------------------------------------------------------
+
+% \newcounter{dummy}
+

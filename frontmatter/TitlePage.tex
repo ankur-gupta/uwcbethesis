@@ -1,0 +1,75 @@
+%%
+%% UW CBE Thesis: frontmatter/TitlePage.tex
+%% Written by Ankur Gupta, Sep 1, 2013
+%% Departament of Chemical and Biological Engineering
+%% University of Wisconsin-Madison
+%% Copyright (c) Ankur Gupta, 2014
+%%
+%% License: GPL v3. See LICENSE.
+%%
+
+%% UW requirement: Format similar to the sample title page
+%% 		           PDF (most likely made in MSWord) that UW provides.
+%%
+
+% Add a PDF bookmark. Need to do this because this page is not in TOC
+\pdfbookmark[1]{Title}{titlepagepdfmark}
+
+% Reduce margins to fit all the text
+\newgeometry{left=1.25in,right=1.25in,top=1in,bottom=1in}
+
+% UW requirement: No page number (not even roman)
+\thispagestyle{empty}
+
+\vfill
+
+\begin{center}
+	\large
+	\textcolor{Maroon}{\spacedallcaps{\myTitle}} \\
+	\vspace{7ex}
+	by \\
+	\vspace{2ex}
+	{\Large \spacedlowsmallcaps{\myName}} \\
+	
+	\vspace{9ex}
+	
+	A dissertation submitted in partial fulfillment of \\
+	the requirements for the degree of \\
+	
+	\vspace{10ex}
+	
+	\myDegree \\
+	\vspace{1ex}
+	(\mySubject )\\
+	
+	\vspace{12ex}
+	
+	at the \\
+	\vspace{1ex}
+	\MakeTextUppercase{\myUniversity} \\
+	\vspace{1ex}
+	\myYear \\
+\end{center}
+
+\vspace{12ex}
+\begin{flushleft}
+Date of final oral examination: \myMonth \myDate , \myYear \\
+\vspace{1ex}
+The dissertation is approved by the following members of the Final Oral Committee:
+\end{flushleft}
+
+% Edit this only if you have different number of advisors, co-advisors or committee members.
+% Don't hardcode names here. Use uwcbethesis-config.tex for these commands. 
+\indent\indent \myAdvisor, \myAdvisorPos \myAdvisorDep \\
+\indent\indent \myCoAdvisor, \myCoAdvisorPos, \myCoAdvisorDep \\
+\indent\indent \myCMemberOne, \myCMemberOnePos, \myCMemberOneDep \\
+\indent\indent \myCMemberTwo, \myCMemberTwoPos, \myCMemberTwoDep \\
+\indent\indent \myCMemberThree, \myCMemberThreePos, \myCMemberThreeDep \\
+\indent\indent \myCMemberFour, \myCMemberFourPos, \myCMemberFourDep \\
+% \end{flushleft}
+
+% This page should end now
+\cleardoublepage
+
+% Restore geometry defined in uwcbethesis.cls
+\restoregeometry

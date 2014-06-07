@@ -1,0 +1,114 @@
+%%
+%% UW CBE Thesis: thesis.tex
+%% Written by Ankur Gupta, Sep 1, 2013
+%% Departament of Chemical and Biological Engineering
+%% University of Wisconsin-Madison
+%% Copyright (c) Ankur Gupta, 2014
+%%
+%% License: GPL v3. See LICENSE.
+%% UW CBE Thesis main .tex file
+%%
+
+\documentclass[11pt,oneside]{uwcbethesis}
+
+%% Packages to be loaded
+\usepackage{amsmath}	% Provides \align
+\usepackage{graphicx}	% Provides \includegraphics
+\usepackage{setspace}	% Provides \doublespacing
+\usepackage[square,numbers]{natbib}	% Don't change this. See \citea{} in shortcuts.tex
+\usepackage{subcaption}	% subfigures
+% \usepackage{footnote} % Provides \footnote
+% \usepackage[super,longnamesfirst]{natbib}
+\usepackage{amssymb}	% Provides \because
+\usepackage{amsthm}	% Enhanced theorem, definition, proof environments from the AMS
+
+
+\usepackage[chapter]{algorithm}	% Provides algorithm environment. Algorithms will be referenced as [chapter]number.algorithmnumber
+\usepackage{algpseudocode}	% Provides algorithmicx environment
+\usepackage{booktabs} 	% Fancy tables. \toprule, \midrule, \bottomrule commands
+\usepackage{threeparttable} % Provides threeparttable enviroment
+
+
+
+% Define environments (requires amsthm)
+% I need enviroments to be numbered as [chapter]number.[]number (just like equations).
+\newtheorem{defn}{Definition}[chapter] 
+\newtheorem{prop}{Proposition}[chapter]
+\newtheorem{thm}{Theorem}
+\newtheorem{lemma}[thm]{Lemma}
+\newtheorem{assump}{Assumption}[chapter]
+
+
+%% Load the commands/shortcuts
+\input{uwcbethesis-config}
+
+%% Adjustments to uwcbethesis-config (this should be after inputting uwcbethesis-config)
+% Uncomment these two lines below for printing. Comment them for a screen version of the PDF.
+% \hypersetup{colorlinks=false} % Puts boxes around the links. Links still work.
+% \hypersetup{hidelinks} % Makes all links black. Links still work. 
+
+
+\begin{document}
+%---------------------------------------------
+%% Front Matter
+% Uncomment the following line when you're in draft mode. Comment out in the final version.
+% \include{frontmatter/DraftTitlePage} % Does NOT require user editing.
+\include{frontmatter/TitlePage} 
+\include{frontmatter/CopyrightPage} % Does NOT require user editing.
+\pagenumbering{roman}
+\include{frontmatter/DedicationPage} % Requires user editing.
+\include{frontmatter/AcksPage} % Requires user editing.
+\include{frontmatter/ContentsPage} % Does NOT require user editing. DO NOT EDIT unless you know what you're doing.
+\include{frontmatter/Abstract} % Requires user editing.
+%---------------------------------------------
+
+
+
+
+%---------------------------------------------
+%% Main Matter
+\pagenumbering{arabic}
+
+% Chapter 1
+\include{intro/intro}
+
+% Chapter 2
+\include{chaptertwoname/chaptertwoname}
+
+% Chapter 3
+\include{chapterthreename/chapterthreename}
+
+% Chapter 4
+\include{chapterfourname/chapterfourname}
+
+% Chapter 5
+\include{chapterfivename/chapterfivename}
+
+% Chapter 9
+\include{conclusion/conclusion}
+%---------------------------------------------
+
+\appendix
+\include{appendixA/appendixA}
+
+%---------------------------------------------
+%% Bibliography
+\include{frontmatter/BibliographyPage}
+%---------------------------------------------
+
+
+
+%---------------------------------------------
+%% Index
+\include{frontmatter/IndexPage}
+%---------------------------------------------
+
+
+%---------------------------------------------
+%% Vita
+\singlespacing
+\include{frontmatter/VitaPage}
+%---------------------------------------------
+
+\end{document}
+

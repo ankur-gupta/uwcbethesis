@@ -1,0 +1,73 @@
+%%
+%% UW CBE Thesis: frontmatter/ContentsPage.tex
+%% Written by Ankur Gupta, Sep 1, 2013
+%% Departament of Chemical and Biological Engineering
+%% University of Wisconsin-Madison
+%% Copyright (c) Ankur Gupta, 2014
+%%
+%% License: GPL v3. See LICENSE.
+%%
+
+%% Please DO NOT edit these unless you know what you're doing. 
+%% You've been warned. 
+
+
+%------------------------------------------------------
+%% Table of Contents
+% Add to PDF bookmark list in the left hand side pane. 
+% If you add to contents then you don't need to do a pdfbookmark
+% \refstepcounter{dummy}
+\pdfbookmark[1]{\contentsname}{tableofcontents} %the text tableofcontents could be any label in this command
+
+% How many levels to number and display?
+\setcounter{tocdepth}{2} % Do not list subsubsections and below
+\setcounter{secnumdepth}{2} % Do not number subsubsections and below
+
+% Format 'Contents' text
+% \manualmark % Porbably belongs to scrpage2 package which I don't use
+% \markboth{\spacedlowsmallcaps{\contentsname}}{\spacedlowsmallcaps{\contentsname}}
+
+% Create table of contents
+\tableofcontents
+
+% Reset both \leftmark and \rightmark
+% \renewcommand{\chaptermark}[1]{\markboth{\spacedlowsmallcaps{#1}}{\spacedlowsmallcaps{#1}}}
+% \renewcommand{\sectionmark}[1]{\markright{\thesection\enspace\spacedlowsmallcaps{#1}}}
+
+% This page should end now
+\cleardoublepage % Required because I used tocloft package
+%------------------------------------------------------
+
+
+
+%------------------------------------------------------
+%% List of figures
+% Add to TOC
+\phantomsection
+% \refstepcounter{dummy}
+\addcontentsline{toc}{chapter}{\tocEntry{\listfigurename}}
+
+% Create list of figures
+\listoffigures
+
+% This page should end now
+\cleardoublepage % Required because I used tocloft package
+%------------------------------------------------------
+
+
+
+%------------------------------------------------------
+%% List of Tables
+% Add to TOC
+\phantomsection
+% \refstepcounter{dummy}
+\addcontentsline{toc}{chapter}{\tocEntry{\listtablename}}
+
+% Creat list of tables
+\listoftables
+
+% This page should end now
+\cleardoublepage % Required because I used tocloft package
+%------------------------------------------------------
+
+

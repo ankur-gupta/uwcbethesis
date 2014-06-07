@@ -1,0 +1,51 @@
+%%
+%% UW CBE Thesis: frontmatter/VitaPage.tex
+%% Written by Ankur Gupta, Sep 1, 2013
+%% Departament of Chemical and Biological Engineering
+%% University of Wisconsin-Madison
+%% Copyright (c) Ankur Gupta, 2014
+%%
+%% License: GPL v3. See LICENSE.
+%%
+
+
+% UW requirement: No Vita requirement but it's usual in my research group.
+% Add a PDF bookmark. Need to do this because this page is not in TOC
+% \pdfbookmark[0]{Vita}{vita}
+
+
+% Add Vita to TOC
+\phantomsection
+% \refstepcounter{dummy}
+\addcontentsline{toc}{chapter}{\tocEntry{Vita}}
+
+% This is required to keep the quote above and the text below on the same page
+\begingroup
+\let\clearpage\relax
+\let\cleardoublepage\relax
+\let\cleardoublepage\relax
+
+
+
+\chapter*{Vita}
+
+\myName{} was born in the city of Kingsport, King's Landing. 
+He then went to college to study. Then he did internships. 
+Then he decided to come to this university to do his PhD. 
+He won these awards. \\
+
+After graduation, he is going to join the Night's Watch at 
+The Wall as the Lord Commander. \\
+
+\vspace{1ex}
+\noindent Permanent Address: Kingsport, King's Landing\\
+
+\vspace{1ex}
+\noindent This dissertation was prepared by the author with \LaTeXe\xspace using his \texttt{uwcbethesis} template~\footnote{Feel free to remove this line.}
+
+
+
+\endgroup 
+
+% This page should end now
+\cleardoublepage
